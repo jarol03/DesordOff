@@ -517,6 +517,19 @@ p {
 .pestel-letter.e2 { background-color: #6a4c93; }
 .pestel-letter.l { background-color: #ff9f1c; }
 
+.pestel-list {
+    text-align: left;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.pestel-list li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: var(--clr-gray);
+    list-style-type: disc;
+}
+
 /* =========================================
    General Info (Contacto)
    ========================================= */
@@ -560,6 +573,23 @@ p {
     color: var(--clr-dark);
     display: block;
     margin-bottom: 5px;
+}
+
+.social-link {
+    color: var(--clr-secondary);
+    font-weight: 700;
+    text-decoration: underline;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: var(--radius-sm);
+    background-color: rgba(0, 168, 232, 0.1);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-secondary);
+    text-decoration: none;
 }
 
 .info-image {
