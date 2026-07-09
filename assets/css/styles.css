@@ -2,19 +2,19 @@
    Variables & Design Tokens
    ========================================= */
 :root {
-    /* Color Palette */
-    --clr-primary: #8cc63f; /* Vibrant Green */
-    --clr-primary-dark: #6eb020;
-    --clr-secondary: #00a8e8; /* Sky Blue */
-    --clr-accent: #ffb703; /* Sunny Yellow */
-    --clr-tertiary: #fb8500; /* Warm Orange */
-    --clr-earth: #8b5a2b; /* Earthy Brown */
+    /* Color Palette - Golden Glow */
+    --clr-primary: #babd8d;       /* Sage Olive */
+    --clr-primary-dark: #7c6a0a;  /* Deep Gold */
+    --clr-secondary: #eb6424;     /* Burnt Orange */
+    --clr-accent: #fa9500;        /* Amber */
+    --clr-tertiary: #ffdac6;      /* Peach Blush */
+    --clr-earth: #7c6a0a;         /* Deep Gold */
     
     /* Neutrals */
-    --clr-light: #f9fdf5; /* Off-white with green tint */
+    --clr-light: #fffaf5;         /* Warm off-white */
     --clr-white: #ffffff;
-    --clr-dark: #2c3e50;
-    --clr-gray: #6c7a89;
+    --clr-dark: #2c2208;
+    --clr-gray: #6b6245;
     
     /* Typography */
     --font-heading: 'Baloo 2', cursive;
@@ -27,8 +27,8 @@
     --radius-round: 50%;
     
     /* Shadows */
-    --shadow-soft: 0 10px 30px rgba(140, 198, 63, 0.15);
-    --shadow-hover: 0 15px 35px rgba(140, 198, 63, 0.25);
+    --shadow-soft: 0 10px 30px rgba(250, 149, 0, 0.15);
+    --shadow-hover: 0 15px 35px rgba(235, 100, 36, 0.25);
     --shadow-card: 0 8px 24px rgba(0,0,0,0.06);
     
     /* Transitions */
@@ -230,7 +230,7 @@ p {
    ========================================= */
 .hero {
     padding: 160px 0 100px;
-    background: linear-gradient(135deg, #e0f2cd 0%, #f9fdf5 100%);
+    background: linear-gradient(135deg, #fff0e0 0%, #fffaf5 100%);
     position: relative;
     overflow: hidden;
 }
@@ -296,13 +296,13 @@ p {
 .wave-bottom {
     bottom: 0;
     left: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23f9fdf5' fill-opacity='1' d='M0,256L48,245.3C96,235,192,213,288,208C384,203,480,213,576,213.3C672,213,768,203,864,186.7C960,171,1056,149,1152,149.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23fffaf5' fill-opacity='1' d='M0,256L48,245.3C96,235,192,213,288,208C384,203,480,213,576,213.3C672,213,768,203,864,186.7C960,171,1056,149,1152,149.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .wave-top-reverse {
     top: 0;
     left: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23f9fdf5' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,117.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23fffaf5' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,117.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E");
     transform: rotate(180deg);
     margin-top: -1px;
 }
@@ -310,13 +310,13 @@ p {
 .wave-bottom-reverse {
     bottom: 0;
     left: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23f9fdf5' fill-opacity='1' d='M0,192L48,202.7C96,213,192,235,288,213.3C384,192,480,128,576,128C672,128,768,192,864,218.7C960,245,1056,235,1152,213.3C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23fffaf5' fill-opacity='1' d='M0,192L48,202.7C96,213,192,235,288,213.3C384,192,480,128,576,128C672,128,768,192,864,218.7C960,245,1056,235,1152,213.3C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .wave-top {
     top: 0;
     left: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23e0f2cd' fill-opacity='1' d='M0,96L48,122.7C96,149,192,203,288,208C384,213,480,171,576,138.7C672,107,768,85,864,96C960,107,1056,149,1152,176C1248,203,1344,213,1392,218.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23fff0e0' fill-opacity='1' d='M0,96L48,122.7C96,149,192,203,288,208C384,213,480,171,576,138.7C672,107,768,85,864,96C960,107,1056,149,1152,176C1248,203,1344,213,1392,218.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E");
     margin-top: -1px;
 }
 
@@ -389,7 +389,7 @@ p {
    ========================================= */
 .mission-vision {
     padding: 150px 0;
-    background: linear-gradient(135deg, #6eb020 0%, #8cc63f 100%);
+    background: linear-gradient(135deg, #7c6a0a 0%, #fa9500 100%);
     position: relative;
     color: var(--clr-white);
 }
@@ -489,12 +489,12 @@ p {
     box-shadow: var(--shadow-hover);
 }
 
-.pestel-item:nth-child(1):hover { border-bottom-color: #ff595e; }
-.pestel-item:nth-child(2):hover { border-bottom-color: #ffca3a; }
-.pestel-item:nth-child(3):hover { border-bottom-color: #8ac926; }
-.pestel-item:nth-child(4):hover { border-bottom-color: #1982c4; }
-.pestel-item:nth-child(5):hover { border-bottom-color: #6a4c93; }
-.pestel-item:nth-child(6):hover { border-bottom-color: #ff9f1c; }
+.pestel-item:nth-child(1):hover { border-bottom-color: #eb6424; }
+.pestel-item:nth-child(2):hover { border-bottom-color: #fa9500; }
+.pestel-item:nth-child(3):hover { border-bottom-color: #babd8d; }
+.pestel-item:nth-child(4):hover { border-bottom-color: #7c6a0a; }
+.pestel-item:nth-child(5):hover { border-bottom-color: #ffdac6; }
+.pestel-item:nth-child(6):hover { border-bottom-color: #fa9500; }
 
 .pestel-letter {
     width: 60px;
@@ -510,12 +510,12 @@ p {
     margin: 0 auto 20px;
 }
 
-.pestel-letter.p { background-color: #ff595e; }
-.pestel-letter.e1 { background-color: #ffca3a; color: var(--clr-dark); }
-.pestel-letter.s { background-color: #8ac926; }
-.pestel-letter.t { background-color: #1982c4; }
-.pestel-letter.e2 { background-color: #6a4c93; }
-.pestel-letter.l { background-color: #ff9f1c; }
+.pestel-letter.p  { background-color: #eb6424; }
+.pestel-letter.e1 { background-color: #fa9500; color: var(--clr-dark); }
+.pestel-letter.s  { background-color: #babd8d; color: var(--clr-dark); }
+.pestel-letter.t  { background-color: #7c6a0a; }
+.pestel-letter.e2 { background-color: #ffdac6; color: var(--clr-dark); }
+.pestel-letter.l  { background-color: #eb6424; }
 
 .pestel-list {
     text-align: left;
@@ -535,7 +535,7 @@ p {
    ========================================= */
 .general-info {
     padding: 150px 0 100px;
-    background-color: #e0f2cd;
+    background-color: #fff0e0;
     position: relative;
 }
 
@@ -582,7 +582,7 @@ p {
     display: inline-block;
     padding: 2px 5px;
     border-radius: var(--radius-sm);
-    background-color: rgba(0, 168, 232, 0.1);
+    background-color: rgba(235, 100, 36, 0.1);
     transition: var(--transition);
 }
 
